@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class RegisterActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_home);
     }
 
-    public void sudahpunyaakun(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+    public void buka(View view) {
+        Intent buka = new Intent(HomeActivity.this, ChatActivity.class);
+        startActivity(buka);
     }
 }

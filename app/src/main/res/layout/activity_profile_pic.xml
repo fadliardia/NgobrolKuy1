@@ -7,11 +7,11 @@
     android:background="@drawable/gradient_drawable"
     tools:context=".ProfilePicActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePic"
         android:layout_width="500px"
         android:layout_height="500px"
-        android:src="@drawable/profile_placeholder"
+        android:background="@drawable/profile_placeholder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,9 +25,11 @@
         app:layout_constraintEnd_toEndOf="@id/profilePic"
         app:layout_constraintBottom_toBottomOf="@id/profilePic"/>
 
-    <ImageView
-        android:layout_width="100px"
-        android:layout_height="100px"
+    <ImageButton
+        android:id="@+id/imagetambah"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="?android:selectableItemBackground"
         android:src="@drawable/ic_baseline_edit_24"
         app:layout_constraintStart_toStartOf="@id/pinkCircle"
         app:layout_constraintEnd_toEndOf="@id/pinkCircle"
@@ -60,22 +62,9 @@
         app:layout_constraintTop_toBottomOf="@id/profilePic" />
 
 
-    <TextView
-        android:visibility="visible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lewati"
-        android:fontFamily="@font/redhatdisplay_regular"
-        android:textStyle="bold"
-        android:textSize="12pt"
-        android:textColor="@color/white"
-        android:layout_margin="32dp"
-        android:background="@drawable/rounded_outline"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+
 
     <androidx.cardview.widget.CardView
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="32dp"
@@ -87,11 +76,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lanjut"
+            android:text="LANJUT"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
             android:textSize="12pt"
             android:textColor="@color/white"
+            android:clickable="true"
+            android:onClick="lanjut"
             android:layout_marginStart="18dp"
             android:layout_marginEnd="18dp"
             android:layout_marginTop="8dp"

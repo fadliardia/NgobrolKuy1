@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/ngobrolTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Ngobrol"
+        android:textColor="@color/white"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/kuyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Kuy"
+        android:textColor="@color/pink"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ngobrolTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/backlupa"
+        android:layout_width="51dp"
+        android:layout_height="93dp"
+        android:src="@drawable/icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-148dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <LinearLayout
+            android:id="@+id/inputList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="hayuuuuuukkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main "
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main yukkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main yukkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main yukkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main yukkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main yukkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Andi"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judul"
+                    android:layout_toRightOf="@id/foto"
+                    android:clickable="true"
+                    android:onClick="buka"
+                    android:text="Main yukkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="17.32"
+                    android:textColor="@color/white"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -176,6 +176,8 @@
         android:textSize="12pt"
         android:textColor="@color/white"
         android:layout_margin="32dp"
+        android:clickable="true"
+        android:onClick="sudahpunyaakun"
         android:background="@drawable/rounded_outline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
